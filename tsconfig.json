@@ -1,0 +1,23 @@
+{
+    "buildOnSave": true,
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "outFile": "./fuel/public/assets/js/tsc.js"
+    },
+    "filesGlob": [
+        "./typescript/**/*.ts"
+    ],
+    "files": [
+        "./typescript/t2.ts",
+        "./typescript/tes/test.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
