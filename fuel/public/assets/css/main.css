@@ -1,0 +1,27 @@
+.anime.ng-enter,
+.anime.ng-leave,
+.anime.ng-move {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.anime.ng-enter {
+  opacity: 0;
+}
+.anime.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.anime.ng-leave {
+  opacity: 1;
+}
+.anime.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.anime.ng-move {
+  opacity: .5;
+}
+.anime.ng-move.ng-move-active {
+  opacity: 1;
+}
+.hide {
+  display: none;
+}
