@@ -34,6 +34,12 @@
 				<div class="jumbotron">
 				  <p ng-bind="ctrl.activeContent.bodyText"></p>
 				</div>
+
+				<div class="list-group" ng-show="ctrl.activeContent.scrollContentFlg" infinite-scroll="ctrl.addScrollContents()" infinite-scroll-distance="0">
+					<div class="list-group-item" ng-repeat="scrollContent in ctrl.scrollContents track by $index">
+						<a href="#" ng-bind="scrollContent"></a>
+					</div>
+				</div>
 			</div>
 
 		</div>
